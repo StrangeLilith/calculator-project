@@ -10,3 +10,12 @@ def test_square_root_negative():
 
 def test_percentage():
     assert AdvancedCalculator.percentage(200, 15) == 30
+
+def test_factorial():
+    assert AdvancedCalculator.factorial(5) == 120
+    assert AdvancedCalculator.factorial(0) == 1
+    assert AdvancedCalculator.factorial(1) == 1
+
+def test_factorial_negative():
+    with pytest.raises(ValueError):
+        AdvancedCalculator.factorial(-5)
