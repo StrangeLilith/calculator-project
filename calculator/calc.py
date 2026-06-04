@@ -1,5 +1,4 @@
 class Calculator:
-    """Простой калькулятор с базовыми операциями"""
     
     @staticmethod
     def add(a, b):
